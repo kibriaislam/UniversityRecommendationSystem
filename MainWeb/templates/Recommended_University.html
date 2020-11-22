@@ -1,0 +1,20 @@
+<h1>You Can Take Part in these University with your current result:</h1>
+
+{% for data in data %}
+   <h6>University</h6>
+    <p>{{data.universityid.uName}}</p>
+    <h6>location</h6>
+    <p>{{data.universityid.location}}</p>
+    <h6>Unit</h6>
+    <p>{{data.unit}}</p>
+    <h6>Require GPA</h6>
+    <p>{{data.requireGpa}}</p>
+    <h6>website</h6>
+    <a href="" >{{data.universityid.website}}  </a>
+    <h6>Exam Date</h6>
+    <p>{{data.examdate}}</p>
+
+
+
+
+{% endfor %}
